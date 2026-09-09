@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A modern responsive business website demo.">
+  <title>Nova Studio — Digital Solutions</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container nav">
+      <a class="logo" href="#home">NOVA<span>STUDIO</span></a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">☾</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">DIGITAL STUDIO • INDIA</p>
+          <h1>We build websites that help businesses <span>grow.</span></h1>
+          <p class="hero-text">Modern websites, clean branding and practical digital solutions for local businesses and growing teams.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#contact">Start a project</a>
+            <a class="btn secondary" href="#work">See our work</a>
+          </div>
+          <div class="stats">
+            <div><strong>40+</strong><small>Projects</small></div>
+            <div><strong>4.9/5</strong><small>Client rating</small></div>
+            <div><strong>7 days</strong><small>Typical launch</small></div>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="window-bar"><i></i><i></i><i></i></div>
+          <div class="mockup">
+            <p>YOUR BUSINESS</p>
+            <h3>Make a strong first impression.</h3>
+            <div class="mock-lines"><span></span><span></span><span></span></div>
+            <button>Explore</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container two-col">
+        <div>
+          <p class="eyebrow">ABOUT US</p>
+          <h2>Simple ideas. <br>Strong execution.</h2>
+        </div>
+        <div>
+          <p>Nova Studio is a demo business website built to show a real client-ready workflow: responsive design, interactive navigation, a working contact form and easy deployment.</p>
+          <p>Replace this text with your client's real story, photos, services and contact details before launch.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section muted" id="services">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="eyebrow">WHAT WE DO</p><h2>Services</h2></div>
+          <p>Everything a small business needs to look professional online.</p>
+        </div>
+        <div class="cards">
+          <article class="card"><div class="icon">01</div><h3>Business Websites</h3><p>Fast, responsive websites designed around your customers and goals.</p></article>
+          <article class="card"><div class="icon">02</div><h3>Landing Pages</h3><p>Focused pages for campaigns, products, launches and lead generation.</p></article>
+          <article class="card"><div class="icon">03</div><h3>Website Support</h3><p>Content changes, improvements and ongoing maintenance after launch.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="work">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="eyebrow">SELECTED WORK</p><h2>Recent projects</h2></div>
+        </div>
+        <div class="projects">
+          <article class="project"><div class="project-img one">CAFE</div><div class="project-body"><h3>Urban Bean</h3><p>Cafe website • Menu • Contact</p></div></article>
+          <article class="project"><div class="project-img two">FITNESS</div><div class="project-body"><h3>Peak Fitness</h3><p>Gym website • Classes • Enquiry</p></div></article>
+          <article class="project"><div class="project-img three">LEARN</div><div class="project-body"><h3>Bright Academy</h3><p>Coaching website • Courses • Leads</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section muted faq">
+      <div class="container narrow">
+        <p class="eyebrow">FAQ</p><h2>Common questions</h2>
+        <details><summary>How long does a website take?</summary><p>A small business site can often be prepared in about a week once content is available.</p></details>
+        <details><summary>Can the website be changed after launch?</summary><p>Yes. With GitHub connected to Netlify, you edit the files, push the changes, and Netlify automatically publishes the new version.</p></details>
+        <details><summary>Can I use my own domain?</summary><p>Yes. A custom domain such as yourbusiness.com can be connected after deployment.</p></details>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="container contact-grid">
+        <div>
+          <p class="eyebrow">GET IN TOUCH</p>
+          <h2>Have a project in mind?</h2>
+          <p>Send a message using the form. On Netlify, this form can be handled by Netlify Forms without building a separate backend for this demo.</p>
+          <div class="contact-info">
+            <p><strong>Email</strong><br>hello@novastudio.example</p>
+            <p><strong>Location</strong><br>India</p>
+          </div>
+        </div>
+
+        <form class="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="contact">
+          <p class="hidden"><label>Don't fill this out: <input name="bot-field"></label></p>
+          <label>Name<input name="name" type="text" required></label>
+          <label>Email<input name="email" type="email" required></label>
+          <label>Message<textarea name="message" rows="6" required></textarea></label>
+          <button class="btn primary" type="submit">Send message</button>
+          <p class="form-note">After deployment on Netlify, submissions appear in the site's Forms area.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer">
+      <p>© <span id="year"></span> Nova Studio</p>
+      <a href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
